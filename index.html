@@ -10,29 +10,28 @@
     <body>
         <header>
             <h1>Julien VILLEVIEILLE</h1>
-            <h3><strong>Développeur Unity / Développeur Web</strong></h3>
+            <h2>Développeur Unity / Développeur Web</h2>
         </header>
 
-        <nav id="my_nav">
+        <nav class="my-nav">
             <ul>
-                <li><a href="#section_description">Qui suis-je ?</a></li>
-                <li><a href="#section_skills">Compétences</a></li>
-                <li><a href="#section_cv">CV</a></li>
-                <li class="last_element_nav"><a href="#section_projects">Projets</a></li>
+                <li><a href="#description">Qui suis-je ?</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li class="last-element-nav"><a href="#projects">Projets</a></li>
             </ul>
         </nav>
 
-        <div id="main_body">
+        <div class="main-body">
             
             <!-- Description -->
-            <section id="section_description">
+            <section class="section-description" id="description">
                 <h2>Qui suis-je ?</h2>
-                <br/><br/>
-                <div id="body_description">
-                    <p id="photo_profil">
+                <div class="body-description">
+                    <div class="photo-profil">
                         <img src="images/photo_profil_mini.jpg" alt="Villevieille Julien" />
-                    </p>
-                    <p id="text_description">
+                    </div>
+                    <p class="text-description">
                         Passionné par les jeux vidéo et leurs créations, j'ai suivi après l'obtention de mon Baccalauréat Scientifique la formation "Programmeur Jeu Vidéo" de l'école 
                         <a target="_blank" href="https://www.creajeux.fr/">Créajeux</a> se situant à Nîmes. J'ai d'abord effectué l'année de "Prépa" pour découvrir les différents métiers du jeu vidéo, 
                         puis j'ai suivi les 3 années du cursus "Programmeur" et obtenu en juin 2018 mon diplôme avec la mention "Bien".
@@ -47,55 +46,58 @@
                         <strong>Le jeu est sorti le 15 Mars 2019 sur Steam</strong> et nous avons malheureusement été confrontés au fait que nous n'avions pas suffisamment de moyens financiers pour continuer cette incroyable aventure.
                         <br/><br/>
                         Depuis, je développe de mon côté pour m'amuser et pour découvrir de nouvelles choses. Je me suis notamment intéressé au développement de site web, 
-                        que j'ai appris en auto-didact.
+                        que j'ai appris grâce aux formations disponibles sur OpenClassrooms.
                     </p>
                 </div>
             </section>
 
             <!-- Skills -->
-            <section id="section_skills">
+            <section class="section-skills" id="skills">
                 <h2>Mes Principales Compétences</h2>
-                <br/><br/><br/><br/><br/>
-                <div id=skills>
-                    <div id="unity">
+                <div class=skills>
+                    <div class="skill-unity">
                         <img src="images/logo_unity.png" alt="Unity 3D" />
                         <p>3D / 2D / UI / Temps réel en C# avec Unity</p>
                     </div>
-                    <div id="web">
+                    <div class="skill-web">
                         <img src="images/logo_web.png" alt="Web" />
-                        <p>HTML5 / CSS3 / Javascript</p>
+                        <p>HTML5 / CSS3 / Javascript / PHP / MySQL</p>
                     </div>
-                    <div id="winforms">
-                        <img src="images/logo_winforms.png" alt="Win Forms"/>
-                        <p>WinForms avec .Net</p>
+                    <div class="skill-git">
+                        <img src="images/logo_git.png" alt="Git / GitHUB"/>
+                        <p>Git / GitHUB</p>
                     </div>
                 </div>
                 
             </section>
             
             <!-- CV -->
-            <section id="section_cv">
+            <section class="section-cv" id="cv">
                 <h2>Mon CV (PDF)</h2>
-                <br/><br/><br/>
-                <div id="img_pdf"><a target="_blank" href="pdf/CV_Julien_Villevieille.pdf"><img src="images/logo_pdf.png" alt="PDF"/></a></div>
+                <div class="img-pdf">
+                    <a target="_blank" href="pdf/CV_Julien_Villevieille.pdf">
+                        <img src="images/logo_pdf.png" alt="Téléchager le CV" title="Télécharger le CV"/>
+                    </a>
+                </div>
                 <a target="_blank" class="button_download_cv" href="pdf/CV_Julien_Villevieille.pdf">Télécharger</a>
             </section>
             
             <!-- Projects -->
-            <section id="section_projects">
+            <section class="section-projects" id="projects">
                 <h2>Mes Projets</h2>
-                <br/><br/>
-                <div id="list_projects">
+                <div class="list-projects">
                     <!-- HALZAE HEROES OF DIVINITY -->
                     <div class="project">
                         <h4>Halzae : Heroes of Divinity</h4>
-                        <div class="img_project"><img src="images/img_halzae.png" alt="Halzae" /></div>
-                        <p class="center_text">
+                        <div class="img-project">
+                            <img src="images/img_halzae.png" alt="Halzae" />
+                        </div>
+                        <p class="center-text">
                             Saltclock Studio - Nîmes 
                             <span class="date">Juin 2018 - Mars 2019</span>
                         </p>
-                        <p class="center_text"><strong>Sorti sur Steam le 15 Mars 2019</strong></p>
-                        <p class="center_text">
+                        <p class="center-text"><strong>Sorti sur Steam le 15 Mars 2019</strong></p>
+                        <p class="center-text">
                             Amélioration, professionnalisation et commercialisation de notre projet étudiant "Super Smash Arena".
                         </p>
                         <p>
@@ -110,12 +112,12 @@
                     <!-- SUPER SMASH ARENA -->
                     <div class="project">
                         <h4>Super Smash Arena</h4>
-                        <div class="img_project"><img src="images/img_ssa.jpg" alt="Super Smash Arena" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_ssa.jpg" alt="Super Smash Arena" /></div>
+                        <p class="center-text">
                             Projet Étudiant - Créajeux - Nîmes
                             <span class="date">Avril 2018 - Juin 2018</span>
                         </p>
-                        <p class="center_text"><strong>Jeu nominé aux Ping Awards 2018 dans la catégorie "Meilleur Jeu Étudiant"</strong></p>
+                        <p class="center-text"><strong>Jeu nominé aux Ping Awards 2018 dans la catégorie "Meilleur Jeu Étudiant"</strong></p>
                         <p>
                             Super Smash Arena est un jeu de bataille en arène en ligne dans lequel 2 à 6 joueurs s'affrontent en chacun pour soi ou en équipe. 
                             Chaque joueur peux récupérer différents sorts à utiliser sur la map, afin d'atteindre les objectifs de la partie.
@@ -127,8 +129,8 @@
                     <!-- UNISON SOULS -->
                     <div class="project">
                         <h4>Unison Souls</h4>
-                        <div class="img_project"><img src="images/iimg_unisonSouls.png" alt="Unison Souls" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/iimg_unisonSouls.png" alt="Unison Souls" /></div>
+                        <p class="center-text">
                             GameJam - Créajeux - Nîmes
                             <span class="date">48H - Début 2018</span>
                         </p>
@@ -143,8 +145,8 @@
                     <!-- TROT THE LAST PROBE -->
                     <div class="project">
                         <h4>T-Rot The Last Probe</h4>
-                        <div class="img_project"><img src="images/img_trot.png" alt="T-Rot The Last Probe" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_trot.png" alt="T-Rot The Last Probe" /></div>
+                        <p class="center-text">
                             Projet Étudiant - Créajeux - Nîmes
                             <span class="date">Avril 2017 - Juin 2017</span>
                         </p>
@@ -161,8 +163,8 @@
                      <!-- YUCATAN DEFENDER -->
                      <div class="project">
                         <h4>Yucatan Defender</h4>
-                        <div class="img_project"><img src="images/img_yucatan.png" alt="Yucatan Defender" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_yucatan.png" alt="Yucatan Defender" /></div>
+                        <p class="center-text">
                             Projet Étudiant - Créajeux - Nîmes
                             <span class="date">Avril 2016 - Juin 2016</span>
                         </p>
@@ -178,8 +180,8 @@
                     <!-- RETRO TOWER -->
                     <div class="project">
                         <h4>Retro Tower</h4>
-                        <div class="img_project"><img src="images/img_retroTower.png" alt="Retro Tower" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_retroTower.png" alt="Retro Tower" /></div>
+                        <p class="center-text">
                             GameJam - Créajeux - Nîmes
                             <span class="date">48h - Début 2016</span>
                         </p>
@@ -195,8 +197,8 @@
                     </div>
                     <div class="project">
                         <h4>Tourments</h4>
-                        <div class="img_project"><img src="images/img_tourments.png" alt="Tourments" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_tourments.png" alt="Tourments" /></div>
+                        <p class="center-text">
                             Projet Étudiant - Créajeux - Nîmes
                             <span class="date">Avril 2015 - Juin 2015</span>
                         </p>
@@ -215,8 +217,8 @@
                     </div>
                     <div class="project">
                         <h4>Caterpillar 3D</h4>
-                        <div class="img_project"><img src="images/img_caterpillar.png" alt="Caterpillar 3D" /></div>
-                        <p class="center_text">
+                        <div class="img-project"><img src="images/img_caterpillar.png" alt="Caterpillar 3D" /></div>
+                        <p class="center-text">
                             Découverte et apprentissage
                             <span class="date">2013-2014</span>
                         </p>
@@ -239,16 +241,16 @@
         </div>
 
         <footer>
-            <div id="main_footer">
+            <div class="main-footer">
                 <p>VILLEVIEILLE Julien</p>
-                <p>
+                <span>
                     <a target="_blank" href="https://www.linkedin.com/in/julien-villevieille-6509b8151/">
                         <img src="images/logo_linkedin.png" alt="Likedin"/>
                     </a>
-                </p>
+                </span>
                 <p>villevieille.julien@gmail.com</p>
             </div>
-            <div id="footer_copyright">
+            <div class="footer_copyright">
                 <p>© 2021 - Villevieille Julien</p>
             </div>
         </footer>
