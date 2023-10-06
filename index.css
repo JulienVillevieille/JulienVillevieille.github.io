@@ -1,0 +1,469 @@
+body
+{
+    background-color: rgb(20, 20, 20);
+}
+
+header, footer
+{
+    background-color: rgb(45, 68, 143);
+    color: white;
+}
+
+/* HEADER */
+
+header
+{
+    /* A VOIR */
+    background-image: url("images/fond-header.png");
+    background-size: cover;
+    background-repeat: round;
+
+    width: 65%;
+    display: block;
+    margin: auto;
+    margin-top: -8px;
+    padding-top: 70px;
+    padding-bottom: 150px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+header h1
+{
+    font-size: 2.5em;
+    margin:auto;
+    padding: 30px;
+
+    text-shadow: 1px 1px 20px white;
+}
+
+header h3
+{
+    font-size: 1.25em;
+    margin:auto;
+    padding: 10px;
+
+    text-shadow: 1px 1px 20px white;
+}
+
+header strong
+{
+    font-style: italic;
+}
+
+/* NAV */
+
+#my_nav
+{
+    width: 66%;
+    background:royalblue;
+    margin: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+    border: 2px solid rgb(20, 20, 20);
+}
+
+#my_nav h3
+{
+    color: white;
+    font-size: 1.4em;
+    border-bottom: 1px solid white;
+}
+
+#my_nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#my_nav li  
+{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-right: 1px solid rgba(255, 255, 255, 0.575);
+}
+
+#my_nav .last_element_nav
+{
+    border: 0;
+}
+
+#my_nav a
+{
+    text-decoration: none;
+    color:white;
+}
+
+#my_nav a:hover
+{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+
+/* BODY */
+
+#main_body
+{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    color:rgb(37, 37, 37);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+#main_body h2
+{
+    text-align: center;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+/* DESCRIPTION */
+
+#section_description
+{
+    background-color: rgb(251, 253, 218);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#section_description h2
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(37, 37, 37);
+}
+
+#section_description #body_description
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#section_description #text_description
+{
+    width: 65%;
+    font-size: 1.1em;
+    text-align: justify;
+    margin: auto;
+}
+
+#section_description #photo_profil
+{
+    width: 28%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    #section_description #body_description
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section_description #text_description
+    {
+        width: 80%;
+    }
+
+    #section_description #photo_profil
+    {
+        margin-top: 0px;
+    }
+}
+
+#section_description img
+{
+    border-radius: 15px;
+    width: 65%;
+}
+
+#section_description a
+{
+    text-decoration: none;
+    color: #e09900;
+    font-weight: bold;
+}
+
+#section_description strong
+{
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+/* SKILLS */
+
+#section_skills
+{
+    background-color: royalblue;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#section_skills h2
+{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+#skills
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#unity, #web, #winforms
+{
+    width: 20%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#unity img, #web img, #winforms img
+{
+    background-color: white;
+    border-radius: 150px;
+    width: 120px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.452);
+}
+
+
+/* CV */
+
+#section_cv
+{
+    background-color: rgb(251, 253, 218);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#section_cv h2
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(37, 37, 37);
+}
+
+
+#img_pdf img
+{
+    height: 100px;
+    padding-bottom: 50px;
+}
+
+.button_download_cv
+{
+    background-color: royalblue;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 10%;
+}
+
+.button_download_cv:hover
+{
+    text-decoration: underline;
+    background-color: rgb(90, 130, 250);
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+
+/* EXPERIENCE */
+
+#section_projects
+{
+    background-color: royalblue;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#section_projects h2
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+#list_projects
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.project
+{
+    background-color: rgb(45, 68, 143);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    width: 45%;
+    margin: 10px;
+}  
+
+@media screen and (max-width: 1000px)
+{
+    #list_projects
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project
+    {
+        width: 90%;
+    }
+}
+
+.project h4
+{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.project .img_project
+{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.project .date
+{
+    padding-left: 30px;
+    color:rgba(255, 255, 255, 0.575);
+}
+
+.project p
+{
+    width: 95%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.project .center_text
+{
+    text-align: center;
+}
+
+.project img
+{
+    width: 95%;
+}
+
+.project li
+{
+    list-style: square;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* FOOTER */
+
+footer
+{
+    background-image: url("images/img_ssa.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    width: 65%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+#main_footer
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main_footer p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    width: 30%;
+    overflow-wrap: break-word;
+    text-shadow: 2px 2px 20px white;
+}
+
+#main_footer img
+{
+    width: 55px;
+    box-shadow: 0px 0px 10px white;;
+}
+
+#main_footer img:hover
+{
+    width: 65px;
+}
+
+#footer_copyright
+{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1px;
+    text-shadow: 2px 2px 20px white;
+}
+
+@media screen and (max-width: 1000px)
+{
+    header, #main_body, footer
+    {
+        width: 85%;
+    }
+
+    #my_nav
+    {
+        width: 86%;
+    }
+}
