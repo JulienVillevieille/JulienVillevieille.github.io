@@ -1,0 +1,41 @@
+@import 'utils/variables';
+@import 'utils/mixin';
+
+@import 'partials/nav';
+@import 'partials/description';
+@import 'partials/skills';
+@import 'partials/header';
+@import 'partials/cv';
+@import 'partials/projects';
+@import 'partials/footer';
+
+* {
+    margin : 0;
+}
+
+body {
+    background-color: $body-background-color;
+}
+
+main {
+    width: $main-width;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+
+    color: $text-color;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+    @media screen and (max-width: $max-width) {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

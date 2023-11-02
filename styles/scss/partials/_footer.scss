@@ -1,0 +1,62 @@
+@import '../utils/variables';
+
+.footer {
+    background-color: $main-color;
+    background-image: url("../../images/img_ssa.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    color: white;
+    
+    width: $main-width;
+    margin: auto;
+    padding-top: 30px;
+    
+    @media screen and (max-width: $max-width) {
+        width: 100%;
+    }
+    
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        
+        &__title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1em;
+            width: 30%;
+            overflow-wrap: break-word;
+            text-shadow: 2px 2px 20px white;
+        }
+
+        &__img {
+            width: 3.438rem;
+            box-shadow: 0px 0px 10px white;
+            margin: 0.313rem;
+
+            &:hover {
+                width: 4.063rem;
+                margin: 0px;
+            }
+        }
+        
+        &__paragraph {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1em;
+            width: 30%;
+            overflow-wrap: break-word;
+            text-shadow: 2px 2px 20px white;
+        }
+    }
+    
+    &__copyright {
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 1px;
+        text-shadow: 2px 2px 20px white;
+    }
+}

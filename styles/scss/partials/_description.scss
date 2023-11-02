@@ -1,0 +1,65 @@
+@import '../utils/variables';
+@import '../utils/mixin';
+
+.description {
+    background-color: $second-color;
+    text-align: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    
+    &__title {
+        @include main-title(40%);
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0 1rem;
+        
+        @media screen and (max-width: $max-width) {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        &__photo {
+            width: 25%;
+            
+            @media screen and (max-width: $max-width) {
+                width: 80%;
+            }
+            
+            img {
+                border-radius: 15px;
+                height: 18.75rem;
+            }
+        }
+        
+        &__text {
+            width: 65%;
+            font-size: 1.1em;
+            text-align: justify;
+            
+            @media screen and (max-width: $max-width) {
+                width: 80%;
+            }
+
+            &--paragraph {
+                margin-bottom: 1rem;
+            }
+            
+            &--link {
+                text-decoration: none;
+                color: #e09900;
+                font-weight: bold;
+            }
+
+            &--strong {
+                font-weight: bold;
+                font-size: 0.95em;
+            }
+        }
+    }
+}

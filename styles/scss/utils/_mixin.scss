@@ -1,0 +1,16 @@
+@import 'variables';
+
+
+@mixin main-title ($width) {
+    width: $width;
+    margin: auto;
+
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid;
+
+    padding-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
+}
