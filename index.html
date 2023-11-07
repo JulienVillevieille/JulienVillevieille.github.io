@@ -9,130 +9,164 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title">Julien VILLEVIEILLE</h1>
-        <h2 class="header__label">Développeur Front-End / Développeur Unity</h2>
-    </header>
-    
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list__element">
-                <a class="nav__list__element__link" href="#description">Qui suis-je ?</a>
-            </li>
-            <li class="nav__list__element">
-                <a class="nav__list__element__link" href="#skills">Compétences</a>
-            </li>
-            <li class="nav__list__element">
-                <a class="nav__list__element__link" href="#cv">CV</a>
-            </li>
-            <li class="nav__list__element nav__list__element--last">
-                <a class="nav__list__element__link" href="#projects">Projets</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <main>
-        <!-- DESCRIPTION -->
-        <section class="description" id="description">
-            <h2 class="description__title">Qui suis-je ?</h2>
-            <div class="description__content">
-                <div class="description__content__photo">
-                    <img src="images/photo_profil_mini.jpg" alt="Villevieille Julien" />
+        <div class="header__content">
+            <div class="header__content__logo">
+                <div class="header__content__logo__container">
+                    <img src="images/photo_profil_mini.jpg" alt="Photo VILLEVIEILLE Julien">
                 </div>
-                <div class="description__content__text">
-                    <p class="description__content__text--paragraph">
-                        Passionné par les jeux vidéo et leurs créations, j'ai suivi après l'obtention de mon Baccalauréat Scientifique la formation "Programmeur Jeu Vidéo" de l'école 
-                        <a class="description__content__text--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a> se situant à Nîmes. J'ai d'abord effectué l'année de "Prépa" pour découvrir les différents métiers du jeu vidéo, 
-                        puis j'ai suivi les 3 années du cursus "Programmeur" et obtenu en juin 2018 mon diplôme avec la mention "Bien".
-                    </p>
-                    <p class="description__content__text--paragraph">
-                        J'y ai notamment appris les langages C / C++ / C#, le game design, le développement avec Unity, Unreal Engine, et surtout à travailler en équipe avec d'autres corps de métier comme les infographistes par exemple.<br/><br/>
-                        À <a class="description__content__text--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a>, chaque fin d'année se termine par la réalisation d'un jeu vidéo en équipe de 6 à 10 personnes (Programmeur et Infographistes) sur 8 semaines,
-                        et lors de ma dernière année, l'équipe avec qui je travaillais et moi-même, avons développé un MOBA (Arène de bataille en ligne multijoueur) qu'on nous disait prometteur <strong class="description__content__text--strong">(Jeu nominé aux Ping Awards 2018 - Catégorie "Meilleur Jeu Étudiant")</strong>.
-                    </p>
-                    <p class="description__content__text--paragraph">
-                        Nous avons donc (la même équipe de développeurs) intégré <a class="description__content__text--link" target="_blank" href="https://www.creajeux.fr/creadev/">CréaDev</a> qui nous a permis de poursuivre le travail sur notre projet de fin d'année (nommé "Super Smash Arena") afin de le professionnaliser et de le commercialiser. 
-                        Pour cela, nous avons crée une société nommée Saltclock Studio et avons donc travaillé de début Juillet 2018 jusqu'à Mars 2019 sur "Halzae : Heroes of Divinity" (nouveau nom du jeu). 
-                    </p>
-                    <p class="description__content__text--paragraph">
-                        <strong class="description__content__text--strong">Le jeu est sorti le 15 Mars 2019 sur Steam</strong> et nous avons malheureusement été confrontés au fait que nous n'avions pas suffisamment de moyens financiers pour continuer cette incroyable aventure.
-                    </p>
-                    <p class="description__content__text--paragraph">
-                        Depuis, je développe de mon côté pour m'amuser et pour découvrir de nouvelles choses. Je me suis notamment intéressé au développement de site web, 
-                        que j'ai appris grâce aux formations disponibles sur OpenClassrooms.
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- SKILLS -->
-        <section class="skills" id="skills">
-            <h2 class="skills__title">Mes Principales Compétences</h2>
-            <div class=skills__content>
-                <div class="skills__content__element skills__content__element--html">
-                    <img class="skills__content__element__image" src="images/logos/html5.svg" alt="Logo HTML5" />
-                    <!-- <p class="skills__content__element__label">HTML5</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--css">
-                    <img class="skills__content__element__image" src="images/logos/css3.svg" alt="Logo CSS3" />
-                    <!-- <p class="skills__content__element__label">CSS3</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--sass">
-                    <img class="skills__content__element__image" src="images/logos/sass.svg" alt="Logo SASS" />
-                    <!-- <p class="skills__content__element__label">Sass</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--js">
-                    <img class="skills__content__element__image" src="images/logos/javascript.svg" alt="Logo Javascript" />
-                    <!-- <p class="skills__content__element__label">Javascript / React</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--react">
-                    <img class="skills__content__element__image" src="images/logos/react.svg" alt="Logo React" />
-                    <p class="skills__content__element__label">React</p>
-                </div>
-                <div class="skills__content__element skills__content__element--php">
-                    <img class="skills__content__element__image" src="images/logos/php.svg" alt="Logo PHP" />
-                    <!-- <p class="skills__content__element__label">PHP</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--sql">
-                    <img class="skills__content__element__image" src="images/logos/sql.svg" alt="Logo SQL" />
-                    <!-- <p class="skills__content__element__label">phpMyAdmin</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--phpMyAdmin">
-                    <img class="skills__content__element__image" src="images/logos/phpmyadmin.svg" alt="Logo phpMyAdmin" />
-                    <!-- <p class="skills__content__element__label">phpMyAdmin</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--figma">
-                    <img class="skills__content__element__image" src="images/logos/figma.svg" alt="Logo Figma" />
-                    <!-- <p class="skills__content__element__label">Figma</p> -->
-                </div>
-                <div class="skills__content__element skills__content__element--git">
-                    <img class="skills__content__element__image" src="images/logos/git.svg" alt="Logo Git" />
-                    <p class="skills__content__element__label">Git</p>
-                </div>
-                <div class="skills__content__element skills__content__element--gitHub">
-                    <img class="skills__content__element__image" src="images/logos/github.svg" alt="Logo GitHUB"/>
-                    <p class="skills__content__element__label">GitHUB</p>
-                </div>
-                <div class="skills__content__element skills__content__element--unity">
-                    <img class="skills__content__element__image" src="images/logos/unity.svg" alt="Logo Unity" />
-                    <p class="skills__content__element__label">Unity</p>
-                </div>
-                <div class="skills__content__element skills__content__element--cSharp">
-                    <img class="skills__content__element__image" src="images/logos/c-sharp.svg" alt="Logo C#" />
-                    <!-- <p class="skills__content__element__label">C#</p> -->
-                </div>
+                <span class="header__content__logo__name">Julien VILLEVIEILLE</span>
             </div>
             
-        </section>
-        
-        <!-- CV -->
-        <section class="cv" id="cv">
-            <h2 class="cv__title">Mon CV (PDF)</h2>
-            <div class="cv__image">
-                <a class="cv__image__link" target="_blank" href="pdf/CV_Julien_Villevieille.pdf">
-                    <img class="cv__image__link__img" src="images/logo_pdf.png" alt="Téléchager le CV" title="Télécharger le CV"/>
-                </a>
+            <div class="header__content__nav">
+                <nav>
+                    <ul class="header__content__nav__list">
+                        <li class="header__content__nav__list__element">
+                            <a class="header__content__nav__list__element__link" href="#">Accueil</a>
+                        </li>
+                        <li class="header__content__nav__list__element">
+                            <a class="header__content__nav__list__element__link" href="#description">Me découvrir</a>
+                        </li>
+                        <li class="header__content__nav__list__element">
+                            <a class="header__content__nav__list__element__link" href="#projects">Projets</a>
+                        </li>
+                        <li class="header__content__nav__list__element">
+                            <a class="header__content__nav__list__element__link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <button target="_blank" class="cv__button" href="pdf/CV_Julien_Villevieille.pdf">Télécharger</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="home">
+            <div class="home__content">
+                <h1 class="home__content__title">Salut, je suis Julien Villevieille</h1>
+                <div class="home__content__paragraph">
+                    <p>
+                        Animé par ma passion pour le développement informatique, je me distingue par ma capacité à concevoir des sites et interfaces web captivantes.
+                    </p>
+                    <p>
+                        De même, mon expertise en développement de jeux vidéos avec Unity témoigne de ma créativité et de ma maîtrise technique.
+                    </p>
+                </div>
+                <a class="home__content__button" href="#projects">Projets</a>
+            </div>
+            <div class="home__mouse__container">
+                <div class="home__mouse__container__element">
+
+                </div>
+            </div>
+        </section>
+        <!-- DESCRIPTION -->
+        <section class="description" id="description">
+            <h2 class="description__title">à propos de moi</h2>
+            <div class="description__content">
+                <div class="description__content__element">
+                    <h3 class="description__content__element--title">Mon histoire</h3>
+                    
+                    <p class="description__content__element--paragraph">
+                        Après l'obtention de mon baccalauréat scientifique, j'ai suivi le cursus de programmeur jeux vidéo à l'école 
+                        <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a>
+                        à Nîmes, où j'ai obtenu mon diplôme en 2018. À la suite de cela, j'ai collaboré avec certains de mes camarades de promotion
+                        pour créer notre propre entreprise de création de jeux vidéo et nous avons principalement travaillé sur le développement 
+                        d'un jeu de type  MOBA appelé « Halzae: Heroes of Divinity ».
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        Ce jeu a été <a class="description__content__element--link" target="_blank" href="https://store.steampowered.com/app/942320/Halzae_Heroes_of_Divinity/">publié sur Steam</a> en mars 2019 et a été téléchargé plus de 10 000 fois. 
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        Malgré tous nos efforts, nous n'avons pas réussi à maintenir une stabilité financière pour notre entreprise, ce qui nous a
+                        contraints à nous séparer et à fermer nos portes.
+                    </p>
+                    
+                    <!-- <p class="description__content__element--paragraph">
+                        Passionné par les jeux vidéo et leurs créations, j'ai suivi après l'obtention de mon Baccalauréat Scientifique la formation "Programmeur Jeu Vidéo" de l'école 
+                        <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a> se situant à Nîmes et obtenu mon diplôme en juin 2018.
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        J'y ai notamment appris les langages C / C++ / C#, le game design, le développement avec Unity, Unreal Engine, et surtout à travailler en équipe avec d'autres corps de métier comme les infographistes par exemple.<br/><br/>
+                        À <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a>, chaque fin d'année se termine par la réalisation d'un jeu vidéo en équipe de 6 à 10 personnes (Programmeur et Infographistes) sur 8 semaines,
+                        et lors de ma dernière année, l'équipe avec qui je travaillais et moi-même, avons développé un MOBA (Arène de bataille en ligne multijoueur) qu'on nous disait prometteur <strong class="description__content__element--strong"><a class="description__content__element--link" target="_blank" href="http://www.ping-awards.com/2018-nominations.php">(Jeu nominé aux Ping Awards 2018 - Catégorie "Meilleur Jeu Étudiant")</a></strong>.
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        Nous avons donc (la même équipe de développeurs) intégré <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">CréaDev</a> qui nous a permis de poursuivre le travail sur notre projet de fin d'année (nommé "Super Smash Arena") afin de le professionnaliser et de le commercialiser. 
+                        Pour cela, nous avons crée une société nommée Saltclock Studio et avons donc travaillé de début Juillet 2018 jusqu'à Mars 2019 sur "Halzae : Heroes of Divinity" (nouveau nom du jeu). 
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        <a class="description__content__element--link" target="_blank" href="https://store.steampowered.com/app/942320/Halzae_Heroes_of_Divinity/">Le jeu est sorti le 15 Mars 2019 sur Steam</a> et nous avons malheureusement été confrontés au fait que nous n'avions pas suffisamment de moyens financiers pour continuer cette incroyable aventure.
+                    </p> -->
+                    
+                    <p class="description__content__element--paragraph">
+                        Par la suite, je me suis principalement orienté vers le développement web. 
+                        J'ai suivi une formation approfondie sur OpenClassrooms, enrichissant mes compétences en langages tels que 
+                        HTML, CSS, Sass, JavaScript, PHP et SQL. 
+                        J'ai également approfondi mes connaissances en travaillant avec des frameworks comme React et appris à utiliser le gestionnaire de version GIT.
+                    </p>
+                    <p class="description__content__element--paragraph">
+                        Actuellement à la recherche d'opportunités professionnelles qui me permettront d'apprendre et de progresser, n'hésitez pas à me contacter 
+                        si vous avez une opportunité intéressante correspondante à mon profil.
+                    </p>
+                    <a class="description__content__element--button" href="#contact">Contact</a>
+                </div>
+                <div class="description__content__element">
+                    <h3 class="description__content__element--title">Mes compétences</h3>
+                    <div class="skills__content">
+                        <div class="skills__content__element skills__content__element--html">
+                            <img class="skills__content__element__image" src="images/logos/html5.svg" alt="Logo HTML5" />
+                            <!-- <p class="skills__content__element__label">HTML5</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--css">
+                            <img class="skills__content__element__image" src="images/logos/css3.svg" alt="Logo CSS3" />
+                            <!-- <p class="skills__content__element__label">CSS3</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--sass">
+                            <img class="skills__content__element__image" src="images/logos/sass.svg" alt="Logo SASS" />
+                            <!-- <p class="skills__content__element__label">Sass</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--js">
+                            <img class="skills__content__element__image" src="images/logos/javascript.svg" alt="Logo Javascript" />
+                            <!-- <p class="skills__content__element__label">Javascript / React</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--react">
+                            <img class="skills__content__element__image" src="images/logos/react.svg" alt="Logo React" />
+                            <p class="skills__content__element__label">React</p>
+                        </div>
+                        <div class="skills__content__element skills__content__element--php">
+                            <img class="skills__content__element__image" src="images/logos/php.svg" alt="Logo PHP" />
+                            <!-- <p class="skills__content__element__label">PHP</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--sql">
+                            <img class="skills__content__element__image" src="images/logos/sql.svg" alt="Logo SQL" />
+                            <!-- <p class="skills__content__element__label">phpMyAdmin</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--phpMyAdmin">
+                            <img class="skills__content__element__image" src="images/logos/phpmyadmin.svg" alt="Logo phpMyAdmin" />
+                            <!-- <p class="skills__content__element__label">phpMyAdmin</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--figma">
+                            <img class="skills__content__element__image" src="images/logos/figma.svg" alt="Logo Figma" />
+                            <!-- <p class="skills__content__element__label">Figma</p> -->
+                        </div>
+                        <div class="skills__content__element skills__content__element--git">
+                            <img class="skills__content__element__image" src="images/logos/git.svg" alt="Logo Git" />
+                            <p class="skills__content__element__label">Git</p>
+                        </div>
+                        <div class="skills__content__element skills__content__element--gitHub">
+                            <img class="skills__content__element__image" src="images/logos/github.svg" alt="Logo GitHUB"/>
+                            <p class="skills__content__element__label">GitHUB</p>
+                        </div>
+                        <div class="skills__content__element skills__content__element--unity">
+                            <img class="skills__content__element__image" src="images/logos/unity.svg" alt="Logo Unity" />
+                            <p class="skills__content__element__label">Unity</p>
+                        </div>
+                        <div class="skills__content__element skills__content__element--cSharp">
+                            <img class="skills__content__element__image" src="images/logos/c-sharp.svg" alt="Logo C#" />
+                            <!-- <p class="skills__content__element__label">C#</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- PROJECTS -->
@@ -141,15 +175,17 @@
             <div class="projects__content">
                 <!-- HALZAE HEROES OF DIVINITY -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Halzae : Heroes of Divinity</h4>
+                    <h3 class="projects__content__element__title">Halzae : Heroes of Divinity</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_halzae.png" alt="Halzae" />
+                        <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/Ki4bkA_g-_0?si=YNSay_4jsc34ZfzM&amp;start=1" title="Trailer Halzae Heroes of Divinity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            <img class="projects__content__element__image__img" src="images/img_halzae.png" alt="Halzae" />
+                        </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Saltclock Studio - Nîmes 
-                        <span class="projects__content__element__text__date">Juin 2018 - Mars 2019</span>
+                        <span class="projects__content__element__text--date">Juin 2018 - Mars 2019</span>
                     </p>
-                    <p class="projects__content__element__text projects__content__element__text--center"><strong>Sorti sur Steam le 15 Mars 2019</strong></p>
+                    <p class="projects__content__element__text projects__content__element__text--center"><a class="projects__content__element__text--link" target="_blank" href="https://store.steampowered.com/app/942320/Halzae_Heroes_of_Divinity/">Sorti sur Steam le 15 Mars 2019</a></p>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Amélioration, professionnalisation et commercialisation de notre projet étudiant "Super Smash Arena".
                     </p>
@@ -159,20 +195,33 @@
                     </p>
                     <p class="projects__content__element__text">
                         J'ai travaillé sur ce projet notamment en tant que Chef de projet, Programmeur Base de données (BrainCloud - JavaScript), 
-                        Programmeur Gameplay (Unity - C#), et je me suis aussi occupé en grande partie du portage du jeu sur Steam.
-                    </p>                    
+                        Programmeur Gameplay (Unity 3D - C#), et je me suis aussi occupé en grande partie du portage du jeu sur Steam.
+                    </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Unity 3D</span>
+                            <span class="projects__content__element__skills__list--element">C#</span>
+                            <span class="projects__content__element__skills__list--element">BrainCloud</span>
+                            <span class="projects__content__element__skills__list--element">Javascript</span>
+                            <span class="projects__content__element__skills__list--element">Steam</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>                
                 </div>
                 <!-- SUPER SMASH ARENA -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Super Smash Arena</h4>
+                    <h3 class="projects__content__element__title">Super Smash Arena</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_ssa.jpg" alt="Super Smash Arena" />
+                        <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/tSOA5WnP160?si=oOrZIzw_tZUrskuY" title="Trailer Super Smash Arena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            <img class="projects__content__element__image__img" src="images/img_ssa.jpg" alt="Super Smash Arena" />
+                        </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Projet Étudiant - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">Avril 2018 - Juin 2018</span>
+                        <time class="projects__content__element__text--date">Avril 2018 - Juin 2018</time>
                     </p>
-                    <p class="projects__content__element__text projects__content__element__text--center"><strong>Jeu nominé aux Ping Awards 2018 dans la catégorie "Meilleur Jeu Étudiant"</strong></p>
+                    <p class="projects__content__element__text projects__content__element__text--center"><a class="projects__content__element__text--link" target="_blank" href="http://www.ping-awards.com/2018-nominations.php">Jeu nominé aux Ping Awards 2018 dans la catégorie "Meilleur Jeu Étudiant"</a></p>
                     <p class="projects__content__element__text">
                         Super Smash Arena est un jeu de bataille en arène en ligne dans lequel 2 à 6 joueurs s'affrontent en chacun pour soi ou en équipe. 
                         Chaque joueur peux récupérer différents sorts à utiliser sur la map, afin d'atteindre les objectifs de la partie.
@@ -180,16 +229,24 @@
                     <p class="projects__content__element__text">
                         J'ai travaillé sur ce projet en tant que Programmeur Gameplay (Unity - C#), Programmeur Outils (Unity - C#) et à la création des FX de sorts avec le système de particules d'Unity.
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Unity 3D</span>
+                            <span class="projects__content__element__skills__list--element">C#</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
                 <!-- UNISON SOULS -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Unison Souls</h4>
+                    <h3 class="projects__content__element__title">Unison Souls</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/iimg_unisonSouls.png" alt="Unison Souls" />
+                        <img class="projects__content__element__image__img" src="images/img_unisonSouls.png" alt="Unison Souls" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         GameJam - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">48H - Début 2018</span>
+                        <time class="projects__content__element__text--date">48H - Début 2018</time>
                     </p>
                     <p class="projects__content__element__text">
                         Ce jeu a été developpé au cours d'une GameJam de 48 heures organisé par l'école Créajeux. C'est un jeu qui se joue à deux en coop, 
@@ -198,16 +255,26 @@
                     <p class="projects__content__element__text">
                         J'ai travaillé sur ce projet en tant que Programmeur Gameplay (Unity - C#) et Programmeur Outils (Unity - C#).
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Unity 3D</span>
+                            <span class="projects__content__element__skills__list--element">C#</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
                 <!-- TROT THE LAST PROBE -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">T-Rot The Last Probe</h4>
+                    <h3 class="projects__content__element__title">T-Rot The Last Probe</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_trot.png" alt="T-Rot The Last Probe" />
+                        <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/U7i2Wupow_k?si=kA-uEJNERAC--wZs" title="Trailer T-Rot : The Last Probe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            <img class="projects__content__element__image__img" src="images/img_trot.png" alt="T-Rot The Last Probe" />
+                        </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Projet Étudiant - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">Avril 2017 - Juin 2017</span>
+                        <time class="projects__content__element__text--date">Avril 2017 - Juin 2017</time>
                     </p>
                     <p class="projects__content__element__text"> 
                         T-Rot The Last Probe est un jeu dans lequel un vaisseau-cargo possédant une cargaison inestimable doit être défendu contre des envahisseurs qui en veulent. 
@@ -218,16 +285,24 @@
                         J'ai travaillé sur ce projet en tant que Programmeur Gameplay (Unity - C#), Programmeur Outils (Unity - C#) 
                         et à la création des FX de sorts avec le système de particules d'Unity.
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Unity 3D</span>
+                            <span class="projects__content__element__skills__list--element">C#</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
                 <!-- YUCATAN DEFENDER -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Yucatan Defender</h4>
+                    <h3 class="projects__content__element__title">Yucatan Defender</h3>
                     <div class="projects__content__element__image">
                         <img class="projects__content__element__image__img" src="images/img_yucatan.png" alt="Yucatan Defender" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Projet Étudiant - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">Avril 2016 - Juin 2016</span>
+                        <time class="projects__content__element__text--date">Avril 2016 - Juin 2016</time>
                     </p>
                     <p class="projects__content__element__text">
                         Yucatan Defender est un Tower Defense où il faut protéger les Mayas d’une attaque de démons malfaisants. 
@@ -237,16 +312,24 @@
                     <p class="projects__content__element__text">
                         J'ai travaillé sur ce projet en tant que Programmeur Moteur (API SFML - C), Programmeur Gameplay (SFML - C) et Programmeur Outils (SFML - C).
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">API SFML</span>
+                            <span class="projects__content__element__skills__list--element">C</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
                 <!-- RETRO TOWER -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Retro Tower</h4>
+                    <h3 class="projects__content__element__title">Retro Tower</h3>
                     <div class="projects__content__element__image">
                         <img class="projects__content__element__image__img" src="images/img_retroTower.png" alt="Retro Tower" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         GameJam - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">48h - Début 2016</span>
+                        <time class="projects__content__element__text--date">48h - Début 2016</time>
                     </p>
                     <p class="projects__content__element__text">
                         Ce jeu a été developpé au cours d'une GameJam de 48 heures organisé par l'école Créajeux. Composé de 3 niveaux, 
@@ -257,15 +340,26 @@
                         Ce jeu représente la première GameJam à laquelle j'ai participé lors de ma première année à Créajeux et fait donc parti des tous premiers jeux sur lesquels j'ai pu travailler.
                         J'ai travaillé sur ce projet en tant que Programmeur Moteur (API SFML - C) et Programmeur Gameplay (SFML - C).
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">API SFML</span>
+                            <span class="projects__content__element__skills__list--element">C</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
+                <!-- TOURMENTS  -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Tourments</h4>
+                    <h3 class="projects__content__element__title">Tourments</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_tourments.png" alt="Tourments" />
+                        <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/2beY40Xn7Zs?si=Io6yyfzO7bL6FXx3" title="Trailer Tourments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            <img class="projects__content__element__image__img" src="images/img_tourments.png" alt="Tourments" />
+                        </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Projet Étudiant - Créajeux - Nîmes
-                        <span class="projects__content__element__text__date">Avril 2015 - Juin 2015</span>
+                        <time class="projects__content__element__text--date">Avril 2015 - Juin 2015</time>
                     </p>
                     <p class="projects__content__element__text">
                         "Un messager sagittaire, oiseau vivant aux alentours de l’équateur et fidèle à la famille royale, est mandé par sa reine souffrante, qui vit des jours difficiles. 
@@ -279,15 +373,24 @@
                         Ce jeu représente le premier "gros" projet sur lequel j'ai travaillé, nous étions un peu moins de 40 élèves à le développer sur une durée de 10 semaines.
                         J'ai travaillé en tant que Programmeur Gameplay et Outils sur le moteur Verge RPG en C.
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Verge RPG</span>
+                            <span class="projects__content__element__skills__list--element">C</span>
+                            <span class="projects__content__element__skills__list--element">SVN</span>
+                        </div>
+                    </div>  
                 </div>
+                <!-- CATERPILLAR 3D -->
                 <div class="projects__content__element">
-                    <h4 class="projects__content__element__title">Caterpillar 3D</h4>
+                    <h3 class="projects__content__element__title">Caterpillar 3D</h3>
                     <div class="projects__content__element__image">
                         <img class="projects__content__element__image__img" src="images/img_caterpillar.png" alt="Caterpillar 3D" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Découverte et apprentissage
-                        <span class="projects__content__element__text__date">2013-2014</span>
+                        <time class="projects__content__element__text--date">2013-2014</time>
                     </p>
                     <p class="projects__content__element__text">
                         Caterpillar 3D est un jeu composé de 10 niveaux (avec un boss au niveau final) où il faut aider Aria (le personnage du jeu - qui est une chenille) à récupérer toutes ses
@@ -301,23 +404,67 @@
                     <p class="projects__content__element__text">
                         C'est vraiment le point de départ de mon projet professionnel, c'est en faisant ce jeu, en apprennant, que j'ai compris que j'aimais ça et que j'étais fait pour ça.
                     </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">Unity 3D</span>
+                            <span class="projects__content__element__skills__list--element">C#</span>
+                            <span class="projects__content__element__skills__list--element">Cinema 4D</span>
+                            <span class="projects__content__element__skills__list--element">Photoshop</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__content">
+                <h2 class="contact__content__title">Contact</h2>
+                <p class="contact__content__paragraph">N'hésitez pas à me contacter en complétant le formulaire ci-dessous et je vous répondrai dès que possible.</p>
+                <div class="contact__content__formContainer">
+                    <form class="contact__content__formContainer__form">
+                        <label class="contact__content__formContainer__form--label" for="contact-name">Nom</label>
+                        <input required class="contact__content__formContainer__form--input" type="text" placeholder="Nom" id="contact-name">
+                    
+                        <label class="contact__content__formContainer__form--label" for="contact-email">Email</label>
+                        <input required class="contact__content__formContainer__form--input" type="email" placeholder="Email" id="contact-email">
+
+                        <label class="contact__content__formContainer__form--label" for="contact-message">Message</label>
+                        <textarea required class="contact__content__formContainer__form--input" cols=30 rows=10 placeholder="Message" id="contact-message"></textarea>
+                        
+                        <div class="contact__content__formContainer__form__button">
+                            <button class="contact__content__formContainer__form__button--button">Envoyer</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     
     <footer class="footer">
-        <div class="footer__content">
-            <h1 class="footer__content__title">VILLEVIEILLE Julien</h1>
-            <span>
-                <a target="_blank" href="https://www.linkedin.com/in/julien-villevieille-6509b8151/">
-                    <img class="footer__content__img" src="images/logo_linkedin.png" alt="Likedin"/>
-                </a>
-            </span>
-            <p class="footer__content__paragraph">villevieille.julien@gmail.com</p>
+        <div class="footer__main">
+            <div class="footer__main__content">
+                <h2 class="footer__main__content__title">Julien VILLEVIEILLE</h2>
+                <p class="footer__main__content__paragraph">Développeur Web Front-End / Développeur Unity 3D</p>
+                <p class="footer__main__content__paragraph">villevieille.julien@gmail.com</p>
+            </div>
+            <div class="footer__main__social">
+                <h2 class="footer__main__social__title">Réseaux</h2>
+                <div class="footer__main__social__links">
+                    <span>
+                        <a target="_blank" href="https://www.linkedin.com/in/julien-villevieille-6509b8151/">
+                            <img class="footer__main__social__img" src="images/logos/linkedin.svg" alt="Linkedin"/>
+                        </a>
+                    </span>
+                    <span>
+                        <a target="_blank" href="https://github.com/julienVillevieille">
+                            <img class="footer__main__social__img" src="images/logos/github.svg" alt="GitHUB"/>
+                        </a>
+                    </span>
+                </div>
+            </div>
         </div>
         <div class="footer__copyright">
-            <p>© 2023 - Villevieille Julien</p>
+            <p>©Copyright 2023 - Fait par Julien Villevieille</p>
         </div>
     </footer>
     

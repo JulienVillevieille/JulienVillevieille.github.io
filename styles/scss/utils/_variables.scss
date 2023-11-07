@@ -1,11 +1,14 @@
 $body-background-color: #F5EFFF;
-$main-color: #7371FC;
-$second-color : #E5D9F2;
+$main-color: #ffffff;
+$second-color : #1964c5;
 
-$text-color : rgb(37, 37, 37);
-
+$text-color : #333333;
+$main-font : 'Source Sans Pro',sans-serif;
+    
 $projects-card-color : lighten($main-color, 20%);
 
-$main-width: 70%;
+$main-width: 100%;
 
-$max-width : 1000px;
+$max-width-tablet : 1200px;
+$max-width-intermediate : 900px;
+$max-width-phones : 700px;

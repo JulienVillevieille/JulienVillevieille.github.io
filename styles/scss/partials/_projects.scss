@@ -5,34 +5,58 @@
 
 .projects {
     background-color: $main-color;
-    color: $text-color;
-    padding-top: 3.125rem;
-    padding-bottom: 6.25rem;
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     
     &__title {
-        @include main-title(40%);
+        @include main-title();
+
+        &::after {
+            @include main-title-after();
+        }
     }
     
     &__content {
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px;
+        gap: 2rem;
         
-        @media screen and (max-width: $max-width) {
+        @media (max-width: $max-width-tablet) {
             flex-direction: column;
             align-items: center;
+            width: 60%;
+            margin: auto;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: $max-width-intermediate) {
+            flex-direction: column;
+            align-items: center;
+            width: 75%;
+            margin: auto;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: $max-width-phones) {
+            flex-direction: column;
+            align-items: center;
+            width: 85%;
+            margin: auto;
+            margin-top: 4rem;
         }
         
         &__element {
             background-color: $projects-card-color;
             border-radius: 10px;
             box-shadow: 3px 3px 10px black;
-            width: 45%;
-            margin: 10px;
+            width: 43%;
+            margin: 0.625rem;
 
-            @media screen and (max-width: $max-width) {
+            @media screen and (max-width: $max-width-tablet) {
                 width: 90%;
             }
 
@@ -41,19 +65,22 @@
                 margin: auto;
                 padding-top: 20px;
                 padding-bottom: 8px;
-                border-bottom: 1px solid;
+                border-bottom: 2px solid;
                 
-                font-size: 1.1em;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
                 text-transform: uppercase;
+                color: darken($text-color, 10%);
             }
 
             &__image {
-                margin-top: 3%;
-                margin-bottom: 3%;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
                 text-align: center;
 
                 &__img {
                     width: 95%;
+                    height: 25rem;
                 }
             }
 
@@ -61,16 +88,54 @@
                 width: 95%;
                 text-align: justify;
                 margin: auto;
-                margin-bottom: 20px;
+                margin-bottom: 1rem;
                 overflow: auto;
+                font-size: 1.05rem;
 
                 &--center {
                     text-align: center;
                 }
 
-                &__date {
-                    padding-left: 30px;
+                &--link {
+                    font-weight: bold;
+                    color: $second-color;
+                    font-size: 1.1rem;
+                }
+
+                &--date {
+                    padding-left: 1.5rem;
                     color: lighten($text-color, 20%);
+                }
+            }
+
+            &__skills {
+                margin: auto;
+                width: 95%;
+                margin-bottom: 2rem;
+                margin-top: 2.5rem;
+
+                &__title {
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    text-align: left;
+                    text-decoration: underline;
+                }
+
+                &__list {
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 0.3rem;
+
+                    &--element {
+                        background-color: darken($main-color, 15%);
+                        padding: 0.5rem 1rem;
+                        border-radius: 0.5rem;
+                    }
                 }
             }
         }

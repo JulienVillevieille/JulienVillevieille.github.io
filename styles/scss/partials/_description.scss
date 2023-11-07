@@ -2,63 +2,71 @@
 @import '../utils/mixin';
 
 .description {
-    background-color: $second-color;
+    background-color: darken($main-color, 2.5%);
     text-align: center;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     
     &__title {
-        @include main-title(40%);
+        @include main-title();
+        
+        &::after {
+            @include main-title-after();
+        }
     }
     
     &__content {
+        width: 85%;
+        margin: auto;
+        margin-top: 6rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-start;
-        padding: 0 1rem;
+        gap: 3rem;
         
-        @media screen and (max-width: $max-width) {
+        @media screen and (max-width: $max-width-intermediate) {
             flex-direction: column;
             align-items: center;
-            gap: 3rem;
+            gap: 8rem;
         }
         
-        &__photo {
-            width: 25%;
-            
-            @media screen and (max-width: $max-width) {
-                width: 80%;
-            }
-            
-            img {
-                border-radius: 15px;
-                height: 18.75rem;
-            }
-        }
-        
-        &__text {
-            width: 65%;
-            font-size: 1.1em;
+        &__element {
+            width: 50%;
+            font-size: 1.15em;
             text-align: justify;
-            
-            @media screen and (max-width: $max-width) {
+            color: lighten($text-color, 10%);
+
+            @media screen and (max-width: $max-width-intermediate) {
                 width: 80%;
             }
 
+            @media screen and (max-width: $max-width-phones) {
+                width: 90%;
+            }
+            
+            &--title {
+                font-weight: 700;
+                font-size: 1.6rem;
+                margin-bottom: 3rem;
+                color: darken($text-color, 10%);
+            }
+            
             &--paragraph {
-                margin-bottom: 1rem;
+                margin-bottom: 1.2rem;
             }
             
             &--link {
                 text-decoration: none;
-                color: #e09900;
+                color: $second-color;
                 font-weight: bold;
             }
 
-            &--strong {
-                font-weight: bold;
-                font-size: 0.95em;
+            &--button {
+                margin-top: 2rem;
+                @include btn();
+                font-size: 1.2rem;
+                padding: 0.8rem 3.5rem;
             }
         }
     }

@@ -1,16 +1,36 @@
 @import 'variables';
 
 
-@mixin main-title ($width) {
-    width: $width;
+@mixin main-title () {
     margin: auto;
 
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
+    color: darken($text-color, 10%);
+    font-weight: 800;
+}
 
-    border-bottom: 1px solid;
+@mixin main-title-after () {
+    content: '';
+    display: block;
+    margin: auto;
+    background: $second-color;
+    height: 7px;
+    width: 3rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
 
-    padding-bottom: 1.25rem;
-    margin-bottom: 2.5rem;
+@mixin btn () {
+    background: $second-color;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    padding: 1rem 5rem;
+    font-size: 1.6rem;
 }
