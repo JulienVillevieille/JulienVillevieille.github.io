@@ -7,56 +7,58 @@
     position: fixed;
     background-color: $main-color;
     z-index: 1000;
-
+    
     box-shadow: 0 10px 100px rgba(0,0,0,.1);
-
+    
     @media screen and (max-width: $max-width-tablet) {
         width: 100%;
     }
-
+    
     &__content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 4rem;
-
+        
         font-size: 1.15rem;
         font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
-
+        
         @media screen and (max-width: $max-width-intermediate) {
             padding: 1rem 1rem;
         }
-
+        
         &__logo {
             display: flex;
             flex-direction: row;
             justify-content: start;
             align-items: center;
-
+            transition: color 300ms;
+            
             &:hover {
                 cursor: pointer;
+                color: $second-color;
             }
-
+            
             &__container {
                 width: 4rem;
                 height: 4rem;
                 border-radius: 2rem;
                 overflow: hidden;
                 margin-right: 1.5rem;
-
+                
                 @media screen and (max-width: $max-width-tablet) {
                     width: 3rem;
                     height: 3rem;
                 }
-
+                
                 @media screen and (max-width: $max-width-intermediate) {
                     width: 2.5rem;
                     height: 2.5rem;
                 }
-
+                
                 & img {
                     width: 100%;
                     height: 100%;
@@ -65,38 +67,97 @@
                 }
             }
         }
-
+        
         &__nav {
             padding: 1rem;
-
-            @media screen and (max-width: $max-width-intermediate) {
-                display: none;
-            }
-
+            
             &__list {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 gap: 3.5rem;
-
+                
                 @media screen and (max-width: $max-width-tablet) {
                     gap: 2rem;
                 }
-
+                
                 @media screen and (max-width: $max-width-intermediate) {
                     gap: 1rem;
                 }
-
+                
+                @media screen and (max-width: $max-width-phones) {
+                    display: none;
+                }
+                
                 &__element {
                     list-style: none;
-
+                    
                     &__link {
                         color: $text-color;
-
+                        transition: color 300ms, padding 100ms;
+                        
                         &:hover{
                             padding-bottom: 10px;
                             border-bottom: 2px solid;
+                            color: $second-color;
+                        }
+                    }
+                }
+            }
+            
+            &__hamburger {
+                display: none;
+
+                @media screen and (max-width: $max-width-phones) {
+                    display: block;
+                }
+                
+                &__img {
+                    height: 1.6rem;
+
+                    &--close {
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    &__mob-menu {
+        background: $main-color;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        display: none;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+        
+        
+        &__nav {
+            
+            &__list {
+                padding: 0;
+                
+                &__element {
+                    display: block;
+                    text-decoration: none;
+                    padding: 2rem 3rem;
+                    font-size: 1.2rem;
+                    color: $text-color;
+                    text-align: right;
+                    border-top: 1px solid darken($main-color, 20%);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    transition: color 250ms;
+                    
+                    &__link {
+                        color: $text-color;
+                        transition: color 250ms;
+                        
+                        &:hover {
+                            color: $second-color;
                         }
                     }
                 }

@@ -25,7 +25,7 @@
         justify-content: center;
         gap: 2rem;
         
-        @media (max-width: $max-width-tablet) {
+        @media screen and (max-width: $max-width-tablet) {
             flex-direction: column;
             align-items: center;
             width: 60%;
@@ -33,7 +33,7 @@
             margin-top: 4rem;
         }
 
-        @media (max-width: $max-width-intermediate) {
+        @media screen and (max-width: $max-width-intermediate) {
             flex-direction: column;
             align-items: center;
             width: 75%;
@@ -41,7 +41,7 @@
             margin-top: 4rem;
         }
 
-        @media (max-width: $max-width-phones) {
+        @media screen and (max-width: $max-width-phones) {
             flex-direction: column;
             align-items: center;
             width: 85%;
@@ -81,6 +81,38 @@
                 &__img {
                     width: 95%;
                     height: 25rem;
+
+                    @media screen and (max-width: $max-width-tablet) {
+                        height: 24rem;
+                    }
+
+                    @media screen and (max-width: ($max-width-tablet - 100)) {
+                        height: 22rem;
+                    }
+
+                    @media screen and (max-width: ($max-width-tablet - 200)) {
+                        height: 20rem;
+                    }
+
+                    @media screen and (max-width: $max-width-intermediate) {
+                        height: 22rem;
+                    }
+
+                    @media screen and (max-width: $max-width-phones) {
+                        height: 20rem;
+                    }
+
+                    @media screen and (max-width: ($max-width-phones - 100)) {
+                        height: 18rem;
+                    }
+
+                    @media screen and (max-width: ($max-width-phones - 200)) {
+                        height: 16rem;
+                    }
+
+                    @media screen and (max-width: ($max-width-phones - 300)) {
+                        height: 14rem;
+                    }
                 }
             }
 

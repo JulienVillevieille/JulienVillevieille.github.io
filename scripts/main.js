@@ -1,0 +1,4 @@
+
+initAddEventListenerHamburgerMenu();
+
+initAddEventListenerMobileMenuElement();

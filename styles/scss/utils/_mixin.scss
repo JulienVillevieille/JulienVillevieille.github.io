@@ -3,7 +3,7 @@
 
 @mixin main-title () {
     margin: auto;
-
+    
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -33,4 +33,10 @@
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
     padding: 1rem 5rem;
     font-size: 1.6rem;
+    
+    transition: transform 300ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-0.25rem) scale(1.03);
+    }
 }

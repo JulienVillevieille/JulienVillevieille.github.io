@@ -2,16 +2,22 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
     <link rel="stylesheet" href="styles/css/main.css"/>
     <link rel="icon" href="images/favicon.ico" />
-    <title>VILLEVIEILLE Julien - Développeur Unity / Web</title>
+
+    <script src="scripts/mobileMenu.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+
+    <title>Julien Villevieille - Développeur Web Front-End</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__content">
             <div class="header__content__logo">
-                <div class="header__content__logo__container">
+                <div class="header__content__logo__container" href="#home">
                     <img src="images/photo_profil_mini.jpg" alt="Photo VILLEVIEILLE Julien">
                 </div>
                 <span class="header__content__logo__name">Julien VILLEVIEILLE</span>
@@ -21,7 +27,7 @@
                 <nav>
                     <ul class="header__content__nav__list">
                         <li class="header__content__nav__list__element">
-                            <a class="header__content__nav__list__element__link" href="#">Accueil</a>
+                            <a class="header__content__nav__list__element__link" href="#home">Accueil</a>
                         </li>
                         <li class="header__content__nav__list__element">
                             <a class="header__content__nav__list__element__link" href="#description">Me découvrir</a>
@@ -34,12 +40,37 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__content__nav__hamburger">
+                        <img class="header__content__nav__hamburger__img header__content__nav__hamburger__img--ham" src="images/icons/hamburger-menu.svg" alt="Icone Menu Hamburger"/>
+                        <img class="header__content__nav__hamburger__img header__content__nav__hamburger__img--close" src="images/icons/close.svg" alt="Icone Close"/>
+                </div>
             </div>
         </div>
+        <div class="header__mob-menu">
+            <nav class="header__mob-menu__nav">
+                <ul class="header__mob-menu__nav__list">
+                    <li class="header__mob-menu__nav__list__element">
+                        <a class="header__mob-menu__nav__list__element__link" href="#home">Accueil</a>
+                    </li>
+                    <li class="header__mob-menu__nav__list__element">
+                        <a class="header__mob-menu__nav__list__element__link" href="#description">Me Découvrir</a>
+                    </li>
+                    <li class="header__mob-menu__nav__list__element">
+                        <a class="header__mob-menu__nav__list__element__link" href="#projects">Projets</a>
+                    </li>
+                    <li class="header__mob-menu__nav__list__element">
+                        <a class="header__mob-menu__nav__list__element__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
     
     <main>
-        <section class="home">
+        
+        <!-- ACCUEIL -->
+        <section class="home" id="home">
             <div class="home__content">
                 <h1 class="home__content__title">Salut, je suis Julien Villevieille</h1>
                 <div class="home__content__paragraph">
@@ -53,14 +84,15 @@
                 <a class="home__content__button" href="#projects">Projets</a>
             </div>
             <div class="home__mouse__container">
-                <div class="home__mouse__container__element">
-
-                </div>
+                <div class="home__mouse__container__element"></div>
             </div>
         </section>
+        
         <!-- DESCRIPTION -->
         <section class="description" id="description">
+            
             <h2 class="description__title">à propos de moi</h2>
+            
             <div class="description__content">
                 <div class="description__content__element">
                     <h3 class="description__content__element--title">Mon histoire</h3>
@@ -79,24 +111,6 @@
                         Malgré tous nos efforts, nous n'avons pas réussi à maintenir une stabilité financière pour notre entreprise, ce qui nous a
                         contraints à nous séparer et à fermer nos portes.
                     </p>
-                    
-                    <!-- <p class="description__content__element--paragraph">
-                        Passionné par les jeux vidéo et leurs créations, j'ai suivi après l'obtention de mon Baccalauréat Scientifique la formation "Programmeur Jeu Vidéo" de l'école 
-                        <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a> se situant à Nîmes et obtenu mon diplôme en juin 2018.
-                    </p>
-                    <p class="description__content__element--paragraph">
-                        J'y ai notamment appris les langages C / C++ / C#, le game design, le développement avec Unity, Unreal Engine, et surtout à travailler en équipe avec d'autres corps de métier comme les infographistes par exemple.<br/><br/>
-                        À <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">Créajeux</a>, chaque fin d'année se termine par la réalisation d'un jeu vidéo en équipe de 6 à 10 personnes (Programmeur et Infographistes) sur 8 semaines,
-                        et lors de ma dernière année, l'équipe avec qui je travaillais et moi-même, avons développé un MOBA (Arène de bataille en ligne multijoueur) qu'on nous disait prometteur <strong class="description__content__element--strong"><a class="description__content__element--link" target="_blank" href="http://www.ping-awards.com/2018-nominations.php">(Jeu nominé aux Ping Awards 2018 - Catégorie "Meilleur Jeu Étudiant")</a></strong>.
-                    </p>
-                    <p class="description__content__element--paragraph">
-                        Nous avons donc (la même équipe de développeurs) intégré <a class="description__content__element--link" target="_blank" href="https://www.creajeux.fr/">CréaDev</a> qui nous a permis de poursuivre le travail sur notre projet de fin d'année (nommé "Super Smash Arena") afin de le professionnaliser et de le commercialiser. 
-                        Pour cela, nous avons crée une société nommée Saltclock Studio et avons donc travaillé de début Juillet 2018 jusqu'à Mars 2019 sur "Halzae : Heroes of Divinity" (nouveau nom du jeu). 
-                    </p>
-                    <p class="description__content__element--paragraph">
-                        <a class="description__content__element--link" target="_blank" href="https://store.steampowered.com/app/942320/Halzae_Heroes_of_Divinity/">Le jeu est sorti le 15 Mars 2019 sur Steam</a> et nous avons malheureusement été confrontés au fait que nous n'avions pas suffisamment de moyens financiers pour continuer cette incroyable aventure.
-                    </p> -->
-                    
                     <p class="description__content__element--paragraph">
                         Par la suite, je me suis principalement orienté vers le développement web. 
                         J'ai suivi une formation approfondie sur OpenClassrooms, enrichissant mes compétences en langages tels que 
@@ -107,8 +121,10 @@
                         Actuellement à la recherche d'opportunités professionnelles qui me permettront d'apprendre et de progresser, n'hésitez pas à me contacter 
                         si vous avez une opportunité intéressante correspondante à mon profil.
                     </p>
+                    
                     <a class="description__content__element--button" href="#contact">Contact</a>
                 </div>
+                
                 <div class="description__content__element">
                     <h3 class="description__content__element--title">Mes compétences</h3>
                     <div class="skills__content">
@@ -171,14 +187,85 @@
         
         <!-- PROJECTS -->
         <section class="projects" id="projects">
+            
             <h2 class="projects__title">Mes Projets</h2>
+            
             <div class="projects__content">
+                <!-- Page Web - Villevieille Julien -->
+                <div class="projects__content__element">
+                    <h3 class="projects__content__element__title">Page Web - Julien Villevieille</h3>
+                    <div class="projects__content__element__image">
+                        <img class="projects__content__element__image__img" src="images/photos/site_jv.JPG" alt="Photo du site web"/>
+                    </div>
+                    <p class="projects__content__element__text projects__content__element__text--center">
+                        Projet Personnel - Nîmes 
+                        <span class="projects__content__element__text--date">
+                            Octobre 2023 - Novembre 2023
+                        </span>
+                    </p>
+                    <p class="projects__content__element__text projects__content__element__text--center">
+                        Création complète de ma page web de présentation.
+                    </p>
+                    <p class="projects__content__element__text">
+                        La conception intégrale de cette page web m'a offert l'opportunité d'exploiter certaines de mes compétences et de les perfectionner davantage.
+                    </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">HTML5</span>
+                            <span class="projects__content__element__skills__list--element">CSS3</span>
+                            <span class="projects__content__element__skills__list--element">Sass</span>
+                            <span class="projects__content__element__skills__list--element">Javascript</span>
+                            <span class="projects__content__element__skills__list--element">Git</span>
+                            <span class="projects__content__element__skills__list--element">GitHUB</span>
+                        </div>
+                    </div>                
+                </div>
+                <!-- Site Web - Les Lampes de Sylvie -->
+                <div class="projects__content__element">
+                    <h3 class="projects__content__element__title">Site Web - Les Lampes de Sylvie</h3>
+                    <div class="projects__content__element__image">
+                        <img class="projects__content__element__image__img" src="images/photos/site_lampes.JPG" alt="Photo du site web"/>
+                    </div>
+                    <p class="projects__content__element__text projects__content__element__text--center">
+                        Les Lampes de Sylvie - Nîmes
+                        <span class="projects__content__element__text--date">
+                            Octobre 2021 - Décembre 2022
+                        </span>
+                    </p>
+                    <p class="projects__content__element__text projects__content__element__text--center">
+                        Création complète d'un site web de présentation de lampes uniques en bois flotté (partie front-end et back-end).
+                    </p>
+                    <p class="projects__content__element__text">
+                        La réalisation intégrale de ce site web m'a offert l'opportunité d'améliorer mes compétences en développement front-end et de découvrir le back-end. 
+                        J'ai conçu la totalité du site, y compris une section d'administration permettant à la créatrice des lampes d'ajouter et de modifier du contenu 
+                        sans dépendre de mon intervention.
+                    </p>
+                    <p class="projects__content__element__text">
+                        Cette expérience a été extrêmement enrichissante, me permettant de découvrir et d'approfondir mes connaissances, notamment en langages PHP et SQL, 
+                        ainsi qu'en utilisant l'outil phpMyAdmin pour la gestion de la base de données du site.
+                    </p>
+                    <div class="projects__content__element__skills">
+                        <h4 class="projects__content__element__skills__title">Outils utilisés</h4>
+                        <div class="projects__content__element__skills__list">
+                            <span class="projects__content__element__skills__list--element">HTML5</span>
+                            <span class="projects__content__element__skills__list--element">CSS3</span>
+                            <span class="projects__content__element__skills__list--element">JavaScript</span>
+                            <span class="projects__content__element__skills__list--element">PHP</span>
+                            <span class="projects__content__element__skills__list--element">SQL</span>
+                            <span class="projects__content__element__skills__list--element">phpMyAdmin</span>
+                            <span class="projects__content__element__skills__list--element">Git</span>
+                            <span class="projects__content__element__skills__list--element">GitHUB</span>
+                            <span class="projects__content__element__skills__list--element">MAMP</span>
+                        </div>
+                    </div>                
+                </div>
                 <!-- HALZAE HEROES OF DIVINITY -->
                 <div class="projects__content__element">
                     <h3 class="projects__content__element__title">Halzae : Heroes of Divinity</h3>
                     <div class="projects__content__element__image">
                         <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/Ki4bkA_g-_0?si=YNSay_4jsc34ZfzM&amp;start=1" title="Trailer Halzae Heroes of Divinity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            <img class="projects__content__element__image__img" src="images/img_halzae.png" alt="Halzae" />
+                            <img class="projects__content__element__image__img" src="images/photos/halzae.png" alt="Halzae" />
                         </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
@@ -214,7 +301,7 @@
                     <h3 class="projects__content__element__title">Super Smash Arena</h3>
                     <div class="projects__content__element__image">
                         <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/tSOA5WnP160?si=oOrZIzw_tZUrskuY" title="Trailer Super Smash Arena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            <img class="projects__content__element__image__img" src="images/img_ssa.jpg" alt="Super Smash Arena" />
+                            <img class="projects__content__element__image__img" src="images/photos/ssa.jpg" alt="Super Smash Arena" />
                         </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
@@ -242,7 +329,7 @@
                 <div class="projects__content__element">
                     <h3 class="projects__content__element__title">Unison Souls</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_unisonSouls.png" alt="Unison Souls" />
+                        <img class="projects__content__element__image__img" src="images/photos/unisonSouls.png" alt="Unison Souls" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         GameJam - Créajeux - Nîmes
@@ -269,7 +356,7 @@
                     <h3 class="projects__content__element__title">T-Rot The Last Probe</h3>
                     <div class="projects__content__element__image">
                         <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/U7i2Wupow_k?si=kA-uEJNERAC--wZs" title="Trailer T-Rot : The Last Probe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            <img class="projects__content__element__image__img" src="images/img_trot.png" alt="T-Rot The Last Probe" />
+                            <img class="projects__content__element__image__img" src="images/photos/trot.png" alt="T-Rot The Last Probe" />
                         </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
@@ -298,7 +385,7 @@
                 <div class="projects__content__element">
                     <h3 class="projects__content__element__title">Yucatan Defender</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_yucatan.png" alt="Yucatan Defender" />
+                        <img class="projects__content__element__image__img" src="images/photos/yucatan.png" alt="Yucatan Defender" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Projet Étudiant - Créajeux - Nîmes
@@ -325,7 +412,7 @@
                 <div class="projects__content__element">
                     <h3 class="projects__content__element__title">Retro Tower</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_retroTower.png" alt="Retro Tower" />
+                        <img class="projects__content__element__image__img" src="images/photos/retroTower.png" alt="Retro Tower" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         GameJam - Créajeux - Nîmes
@@ -354,7 +441,7 @@
                     <h3 class="projects__content__element__title">Tourments</h3>
                     <div class="projects__content__element__image">
                         <iframe class="projects__content__element__image__img" src="https://www.youtube.com/embed/2beY40Xn7Zs?si=Io6yyfzO7bL6FXx3" title="Trailer Tourments" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            <img class="projects__content__element__image__img" src="images/img_tourments.png" alt="Tourments" />
+                            <img class="projects__content__element__image__img" src="images/photos/tourments.png" alt="Tourments" />
                         </iframe>
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
@@ -386,7 +473,7 @@
                 <div class="projects__content__element">
                     <h3 class="projects__content__element__title">Caterpillar 3D</h3>
                     <div class="projects__content__element__image">
-                        <img class="projects__content__element__image__img" src="images/img_caterpillar.png" alt="Caterpillar 3D" />
+                        <img class="projects__content__element__image__img" src="images/photos/caterpillar.png" alt="Caterpillar 3D" />
                     </div>
                     <p class="projects__content__element__text projects__content__element__text--center">
                         Découverte et apprentissage
@@ -415,7 +502,10 @@
                     </div>  
                 </div>
             </div>
+            
         </section>
+        
+        <!-- CONTACT -->
         <section class="contact" id="contact">
             <div class="contact__content">
                 <h2 class="contact__content__title">Contact</h2>
@@ -424,10 +514,10 @@
                     <form class="contact__content__formContainer__form">
                         <label class="contact__content__formContainer__form--label" for="contact-name">Nom</label>
                         <input required class="contact__content__formContainer__form--input" type="text" placeholder="Nom" id="contact-name">
-                    
+                        
                         <label class="contact__content__formContainer__form--label" for="contact-email">Email</label>
                         <input required class="contact__content__formContainer__form--input" type="email" placeholder="Email" id="contact-email">
-
+                        
                         <label class="contact__content__formContainer__form--label" for="contact-message">Message</label>
                         <textarea required class="contact__content__formContainer__form--input" cols=30 rows=10 placeholder="Message" id="contact-message"></textarea>
                         
@@ -438,28 +528,25 @@
                 </div>
             </div>
         </section>
+        
     </main>
     
     <footer class="footer">
         <div class="footer__main">
             <div class="footer__main__content">
                 <h2 class="footer__main__content__title">Julien VILLEVIEILLE</h2>
-                <p class="footer__main__content__paragraph">Développeur Web Front-End / Développeur Unity 3D</p>
+                <h3 class="footer__main__content__paragraph">Développeur Web Front-End / Développeur Unity 3D</h3>
                 <p class="footer__main__content__paragraph">villevieille.julien@gmail.com</p>
             </div>
             <div class="footer__main__social">
                 <h2 class="footer__main__social__title">Réseaux</h2>
                 <div class="footer__main__social__links">
-                    <span>
-                        <a target="_blank" href="https://www.linkedin.com/in/julien-villevieille-6509b8151/">
-                            <img class="footer__main__social__img" src="images/logos/linkedin.svg" alt="Linkedin"/>
-                        </a>
-                    </span>
-                    <span>
-                        <a target="_blank" href="https://github.com/julienVillevieille">
-                            <img class="footer__main__social__img" src="images/logos/github.svg" alt="GitHUB"/>
-                        </a>
-                    </span>
+                    <a target="_blank" href="https://www.linkedin.com/in/julien-villevieille-6509b8151/">
+                        <img class="footer__main__social__img" src="images/logos/linkedin.svg" alt="Logo Linkedin"/>
+                    </a>
+                    <a target="_blank" href="https://github.com/julienVillevieille">
+                        <img class="footer__main__social__img" src="images/logos/github.svg" alt="Logo GitHUB"/>
+                    </a>
                 </div>
             </div>
         </div>

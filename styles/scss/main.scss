@@ -15,12 +15,12 @@
 
 html {
     scroll-behavior: smooth;
-
-    @media (max-width: $max-width-tablet) {
-       font-size: 85%;
+    
+    @media screen and (max-width: $max-width-tablet) {
+        font-size: 85%;
     }
-
-    @media (max-width: $max-width-intermediate) {
+    
+    @media screen and (max-width: $max-width-intermediate) {
         font-size: 75%;
     }
 }
@@ -37,20 +37,9 @@ main {
     margin: auto;
     flex-direction: column;
     justify-content: center;
-
-    color: $text-color;
     text-align: center;
-
-    
 }
 
 a {
     text-decoration: none;
 }
-
-
-
-
-
-
-
