@@ -75,7 +75,7 @@
                 <h1 class="home__content__title">Salut, je suis Julien Villevieille</h1>
                 <div class="home__content__paragraph">
                     <p>
-                        Animé par ma passion pour le développement informatique, je me distingue par ma capacité à concevoir des sites et interfaces web captivantes.
+                        Animé par ma passion pour le développement informatique, je me distingue par ma capacité à concevoir des sites et interfaces web captivants.
                     </p>
                     <p>
                         De même, mon expertise en développement de jeux vidéos avec Unity témoigne de ma créativité et de ma maîtrise technique.
@@ -511,18 +511,22 @@
                 <h2 class="contact__content__title">Contact</h2>
                 <p class="contact__content__paragraph">N'hésitez pas à me contacter en complétant le formulaire ci-dessous et je vous répondrai dès que possible.</p>
                 <div class="contact__content__formContainer">
-                    <form class="contact__content__formContainer__form">
+                    <form 
+                        class="contact__content__formContainer__form" 
+                        action="https://formspree.io/f/xnqkynln"
+                        method="POST"
+                    >
                         <label class="contact__content__formContainer__form--label" for="contact-name">Nom</label>
-                        <input required class="contact__content__formContainer__form--input" type="text" placeholder="Nom" id="contact-name">
+                        <input required class="contact__content__formContainer__form--input" type="text" placeholder="Nom" id="contact-name" name="name">
                         
                         <label class="contact__content__formContainer__form--label" for="contact-email">Email</label>
-                        <input required class="contact__content__formContainer__form--input" type="email" placeholder="Email" id="contact-email">
+                        <input required class="contact__content__formContainer__form--input" type="email" placeholder="Email" id="contact-email" name="email">
                         
                         <label class="contact__content__formContainer__form--label" for="contact-message">Message</label>
-                        <textarea required class="contact__content__formContainer__form--input" cols=30 rows=10 placeholder="Message" id="contact-message"></textarea>
+                        <textarea required class="contact__content__formContainer__form--input" cols=30 rows=10 placeholder="Message" id="contact-message" name="message"></textarea>
                         
                         <div class="contact__content__formContainer__form__button">
-                            <button class="contact__content__formContainer__form__button--button">Envoyer</button>
+                            <button class="contact__content__formContainer__form__button--button" type="submit">Envoyer</button>
                         </div>
                     </form>
                 </div>

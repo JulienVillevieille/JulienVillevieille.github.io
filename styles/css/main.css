@@ -161,6 +161,11 @@
     height: 75vh;
   }
 }
+@media screen and (max-width: 400px) {
+  .home {
+    height: 75vh;
+  }
+}
 .home__content {
   margin: auto;
   height: 100%;
@@ -179,7 +184,12 @@
 }
 @media screen and (max-width: 700px) {
   .home__content__title {
-    font-size: 3rem;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home__content__title {
+    font-size: 2rem;
   }
 }
 .home__content__paragraph {
@@ -816,6 +826,11 @@ html {
 @media screen and (max-width: 900px) {
   html {
     font-size: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 65%;
   }
 }
 

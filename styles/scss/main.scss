@@ -23,6 +23,10 @@ html {
     @media screen and (max-width: $max-width-intermediate) {
         font-size: 75%;
     }
+
+    @media screen and (max-width: $max-width-phones-low) {
+        font-size: 65%;
+    }
 }
 
 body {
